@@ -22,3 +22,12 @@ let computerChoice = getComputerChoice();
 // User Choise value
 let userEnter = +prompt('Enter 1 for - Rock, 2 for - Paper, and 3 for - Scissors') - 1;
 let userChoice = CONDITIONS[userEnter];
+
+// Conditional unit
+if ((computerChoice === 'rock' && userChoice === 'paper') || 
+    (computerChoice === 'paper' && userChoice === 'scissors') ||
+    (computerChoice === 'scissors' && userChoice === 'rock')) {
+        console.log(`You win. Your choise are ${userChoice}, Computer select ${computerChoice}`)
+    } else {
+        console.log(`You lose. Your choise are ${userChoice}, Computer select ${computerChoice}`)
+    }
